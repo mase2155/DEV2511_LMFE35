@@ -1,0 +1,67 @@
+1. HTML ( 2 -3 buổi )
+ -- Giới thiệu HTML
+ --Các thẻ HTML 
+ --Thuộc tính 
+2.CSS ( 2 Buổi )
+ --Cách sử dụng CSS 
+ --Cách tưởng tác CSS với HTML
+ --Các thuộc tính và giá trị của thuộc tính CSS
+ --Mức độ ưu tiên trong CSS 
+ -- Responsive 
+3. Javascript ( 1 buổi )
+ - ngôn ngữ lập trình kịch bản
+ + khai báo / gán giá trị /sử dụng biến , mảng , object
+ + cấu trúc điều khiển : if else / switch case 
+ + vòng lặp : for  do while / while / foreach
+ + hàm xử lí chuỗi / mảng
+ - rangular execption : check value 
+
+4. DOM /Jquery ( 2 buổi )
+ - Dùng để tương tác giữa ngôn ngữ  Javascript và HTML/CSS
+5.Bootstrap ( 1 buổi )
+ - thư viện giúp CSS code nhanh hơn ( CSS , HTML , Javascript )
+6.Photoshop ( 1 buổi )
+ - cắt ảnh 
+ - đo khoảng cách giữa 
+ - đo bảng màu
+ - kiểm tra font chữ và font size
+7.Thực hành Project ( 2 -3 buổi )
+ - Lấy thiết kế và viết HTML , CSS , Javascript để tạo thành 1 sản phẩm hoàn chỉnh 
+
+
+ Nộp bài : 
+ Bài Lab nộp - nộp thông qua classroom : nộp bằng link git.
+
+ Một số câu lệnh git : 
+ LÀm 1 lần : 
+        git config --global user.name "Your Name"
+        git config --global user.email "your.email@example.com"
+Kiểm tra : 
+    git config --global --list
+
+Up file : 
+    git add .
+    git commit -m " nội dung "
+    git push 
+
+Lấy dữ liệu ( lần đầu )về : 
+    
+    git clone đường_dẫn 
+
+Cập nhật dữ liệu mới nhất : 
+    git pull 
+
+
+Một số phím tắt nhanh : 
+Shift + alt + F : format code 
+Shift + alt + mũi tên lên/xuống : copy
+Ctrl + D : Khoanh các nội dung giống nhau  ( trỏ / sửa nhiều cùng một lúc )
+Ctrl + C : copy
+Ctrl + V : Paste 
+Ctrl + X : Cắt 
+Ctrl + Z : Quay lại 
+Ctrl + Y : Tiến lên
+
+tag : là thẻ HTML
+table>thead>tr*số_lượng>th*số_lượng
+= >> sinh ra số lượng cột , bảng tương ứng 
