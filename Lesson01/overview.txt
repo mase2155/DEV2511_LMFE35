@@ -64,4 +64,4 @@ Ctrl + Y : Tiến lên
 
 tag : là thẻ HTML
 table>thead>tr*số_lượng>th*số_lượng
-= >> sinh ra số lượng cột , bảng tương ứng 
+= >> sinh ra số lượng cột , ô tương ứng 
