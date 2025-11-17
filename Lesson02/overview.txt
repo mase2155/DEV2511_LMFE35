@@ -1,0 +1,32 @@
+1. Giới thiếu HTML
+- HTML là ngôn ngữ siêu văn bản  (và không phải là ngôn ngữ lập trình )
+- Bố cục 1 trang HTML 
+- Một sô thẻ thông dụng :
+   Phân theo tính chất 
+   + Thẻ inline :
+   + Thẻ block  :
+   Phân theo cách viết :
+   + Cặp thẻ đóng và mở 
+   + Thẻ đơn 
+-Một số thuộc tính (attribute) của thẻ HTML : class , id , src , href , type , tên_tự_đặt ,
+2.Table 
+ - Cấu trúc của thẻ table  :
+ <table>
+    <thead>
+       <th> ...</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td> ...</td>
+                 ...
+            <td> ...</td>
+        </tr>
+    </tbody>
+    <tfoot>
+     </tfoot>
+
+
+ </table>
+
+ -Một số thuộc tính của bảng : border , cellspacing , cellpadding , align , colspan , rowspan 
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data" >
+        <!-- type : text-->
+         <div>
+            <input type="text" name="username" id="username" placeholder="Enter your name" value="devmaster" required  >
+         </div>
+        <!--type : password-->
+        <div>
+            <input type="password" name="password" id="">
+        </div>
+        <!--type : hidden --ẩn -->
+        <div>
+            <input type="hidden" name="id" id="">
+        </div>
+        <div>
+            <!-- type : checkbox - chọn nhiều giá trị cùng một lúc -->
+             <input type="checkbox" name="hobby" id="dabong" value="đá bóng" checked>
+             <label for="dabong">Đá bóng </label>
+             <input type="checkbox" name="hobby" id="docsach" value="đọc sách">
+             <label for="docsach" >đọc sách </label>
+             <input type="checkbox" name="hobby" id="xemphim" value="xem phim" >
+             <label for="xemphim">Xem phim</label>
+        </div>
+        <div>
+            <!--Type : Radio - chọn 1 giá trị trong 1 lúc  -->
+            <p>Giới tính của bạn </p>
+            <input type="radio" name="gender" id="male" value ="male"  checked>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female " value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other " value="other">
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <!---->
+            <input type="button" name="button" id="button" value="Click me "> 
+            <button>click me </button>
+            <input type="submit" name="submit" id="submit" value="Submit click me ">
+        </div>
+        <!-- type : reset -->
+         <input type="reset" name="reset" id="reset" value="reset form">
+         <!-- type : File -->
+          <div>
+            <label for="profilePic">Upload Profile Picture </label>
+            <input type="file" id="profilePic " name="profilePic" 
+              accept="image/*">
+          </div>
+          <div>
+            <label for="color" > Color </label>
+            <input type="color" name="" id="">
+          </div>
+          <div>
+            <!-- type : date/datetime-->
+             <label for="birthday">Birthday</label>
+            <input type="date" name=""birthday  id="birthday" value="2000-01-01">
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"
+               placeholder="email@gmail.com">
+          </div>
+          <div>
+            <label for="quantity">Quantity (1-10):</label>
+            <input type="number" name="quantity" id="quantity" min="1"
+               max="10" value="1">
+          </div>
+          <div>
+            <input type="tel" name="phone" id="phone" 
+                placeholder="+84 123 456 789">
+          </div>
+          <div>
+            <label for="volume ">volume</label>
+            <input type="range" name="volume" id="volume    " min="0"
+                max="100" value="50">
+          </div>
+          <div>
+            <label for="website">Website :</label>
+            <input type="email" name="email" id="email "
+                placeholder="email@gmai.com">
+          </div>
+          <div>
+            <label for="search">Search</label>
+            <input type="search" name="search" id="search"
+                placeholder="Search ..." >
+          </div>
+          <div>
+            <label for="mota">Mô tả </label>
+            <textarea name="mota   " id="mota"></textarea>
+          </div>
+          <div>
+            <select name="tinh" id="tinh">
+                <option value="hn">Hà Nội</option>
+                <option value="hcm">Hồ Chí Minh</option>
+                <option value="dn">Đà Nẵng</option>
+            </select>
+          </div>
+          
+    </form>
+</body>
+</html>
