@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Thành Viên </title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="name">Họ và Tên </label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="username">Tên Đăng Nhập </label>
+            <input type="text" name="username" id="username">
+        </div>
+        <div>
+            <label for="password">Mật Khẩu </label>
+            <input type="text" name="password" id="password">
+        </div>
+        <div>
+            <label for="profilePic"> Ảnh Đại Diện </label>
+            <input type="file" id="profilePic " name="profilePic" 
+              accept="image/*">
+        </div>
+        <div>
+            <label for="thudientu">Thư Điện Tử </label>
+            <input type="text" name="thudientu" id="thudientu">
+        </div>
+        <div>
+            <label for="gioitinh">Giới Tính </label>
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label for="male">Nam</label>
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label for="female">Nữ</label>
+        </div>
+        <div>
+            <label for="hobby">Sở Thích </label>
+            <input type="checkbox" name="hobby" id="dabong" value="Đá Bóng">
+            <label for="dabong">Đá Bóng</label>
+            <input type="checkbox" name="hobby" id="xemphim" value="Xem Phim">
+            <label for="xemphim">Xem Phim</label>
+            <input type="checkbox" name="hobby" id="dulich" value="Du Lịch">
+            <label for="dulich">Du Lịch</label>
+            <input type="checkbox" name="hobby" id="boi"    value="Bơi">
+            <label for="boi">Bơi</label>
+            <input type="checkbox" name="hobby" id="nghenhac" value="Nghe Nhạc">
+            <label for="nghenhac">Nghe Nhạc</label>
+        </div>
+        <div>
+            <label for="quequan">Quê Quán </label>
+            <select name="tinh" id="tinh">
+                <option value="manual">--- Chọn Tỉnh ---</option>
+                <option value="hn">Hà Nội</option>
+                <option value="hcm">Hồ Chí Minh</option>
+                <option value="na">Nghệ An</option>
+            </select>
+        </div>
+        <div>
+            <label for="diachi">Địa Chỉ</label>
+            <input type="text" name="diachi" id="diachi">
+        </div>
+        <div>
+            <label for="number">Điện Thoại</label>
+            <input type="text" name="number" id="number">
+        </div>
+        <div>
+            <label for="mota">Mô Tả Ngắn</label>
+            <textarea name="mota" id="mota"></textarea>
+        </div>
+        <div>
+            <input type="button" name="button" id="button" value="Đăng Ký">
+            <input type="button" name="button" id="button" value="Làm lại">
+        </div>
+        
+
+</body>
+</html>
