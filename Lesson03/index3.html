@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các bộ chọn thuộc tính </title>
+    <style>
+        #box-1 p {
+            color: blue;
+        }
+        /* Tag01 > tag02 : CSS các thẻ tag02 nằm trong và là thẻ con trực tiếp */
+        #box-2>p {
+            color: red;
+        }
+        /* Tag01 , tag02 : CSS các thẻ tag02 với điều kiện tag02 nằm trong và là thẻ con trực tiếp  */
+        #box-3 h3 , #box-3 p {
+            color: green;
+        }
+        /* Tag01 + Tag02 : CSS các thẻ tag02 với điều kiện tag02 */
+        #box-4 h3+p {
+            color: orange;
+        }
+        #box-5 h3~p {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tag01  Tag02 : CSS các thẻ tag02 với điều kiện tag02  nằm trong tag01  -->
+     <section id="box-1">
+        <div>
+        <p>tag01 tag02</p>
+
+        <div>
+            <p>tag01>tag02</p>
+        </div>
+        <p></p>
+        </div>
+     </section>
+     <p>Nội dung bên ngoài</p>
+     <!-- Tag01 > tag02 : CSS các thẻ tag02 với điều kiện tag02 nằm trong và là thẻ con trực tiếp  -->
+      <section id="box-2">
+        <p>tag01 > tag02</p>
+        <div>
+        <p>tag01 tag02</p>
+        </div>
+     </section>
+     <p>Nội dung bên ngoài</p>
+     <!-- Tag01 , tag02 : CSS các thẻ tag02 với điều kiện tag02 nằm trong và là thẻ con trực tiếp -->
+      <section id="box-3">
+        <h3> tag01,tag02 </h3>
+        <p>tag01,tag02</p>
+
+      </section>
+      <!-- Tag01 + Tag02 : CSS các thẻ tag02 với điều kiện tag02 -->
+       <section id="box-4">
+        <h3>tag01+tag02</h3>
+        <p>tag01+tag02</p>
+        <p>tag01+tag02</p>
+        <p>tag01+tag02</p>
+       </section>
+       <!-- Tag01 ~ Tag02 : CSS các thẻ tag02 với điều kiện tag02 -->
+        <section id="box-5">
+        <h3>tag01~tag02</h3>
+        <p>tag01~tag02</p>
+        <p>tag01~tag02</p>
+        <p>tag01~tag02</p>
+       </section>
+</body>
+</html>

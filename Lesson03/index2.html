@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cú pháp tương tác với HTML</title>    
+    <style>
+        /* Cách 1 :Tương tác thông qua id của thẻ HTML - tên id */ 
+        #test{
+            color: red;
+        }
+        /* Cách 2 : Tương tác thông qua tên thẻ HTML - tên thẻ*/
+        h3{
+            color: blue;
+        }
+        /* Cách 3 :Tương tác thông qua tên class của thẻ HTML - tên class */
+        .text-green{
+            color: green;
+        }
+        /* Cách4 Tương tác thông qua tên thuộc tính (attr) của HTML  - tên thuộc tính*/
+        [title] {
+            color: orange;
+        }
+        [type = "text"]{
+            border: 2px solid blue;
+        }
+        /* [class] {
+            background-color : yellow;
+        } */
+    </style>   
+</head>
+<body>
+    <!-- Cách 1 : Thông qua tên id của thẻ HTML -->
+     <h2 id="test" > Tương tác thông qua id của HTML</h2>
+     <!--Cách 2 : Tương tác thông qua tên thẻ HTML -->
+      <h3>Tương tác thông qua tên thẻ HTML</h3>
+      <!--Cách 3 : Tương tác thông qua tên class của thẻ HTML -->
+       <h4 class="text-green">Tương tác thông qua class thẻ HTML</h4>
+       <!--Cách 4: Tương tác thông qua tên thuộc tính ( attr ) của thẻ HTML -->
+        <p title="Devmaster"> Tương tác thông qua thuộc tính ( attr) của thẻ HTML</p>
+        <input type="text" name="username" id="username" placeholder="Thuộc tính (attr) của HTML">
+        <input type="password" name="username" id="username " 
+            placeholder="Thuộc tính (attr) của HTML ">
+</body>
+</html>
