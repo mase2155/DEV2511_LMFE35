@@ -1,0 +1,4 @@
+Cấp độ ưu tiên trong CSS
++ CSS viết sau sẽ được ưu tiên sử dụng 
++ !important ->  tên_id -> tên_class-> tên_thuộc_tính - > tên_thẻ
++ bộ chọn CSS càng chi tiết và càng gần thì càng được ưu tiên sử dụng 
