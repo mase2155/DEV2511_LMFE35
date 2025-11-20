@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box{
+            border: 3px solid ;
+        }
+        #box-1{
+            width: 300px;
+            height: 300px;
+            border-color: red;
+            position: relative;
+        }
+        #box-2{
+            width: 200px;
+            height: 200px;
+            border-color: blue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
+        #box-3{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-color: green;
+            top: 20px;
+            left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box-1" class="box">
+        <div id="box-2" class="box">
+            <div id="box-3" class="box"></div>
+        </div>
+    </div>
+</body>
+</html>
