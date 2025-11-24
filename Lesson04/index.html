@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xử lí Menu</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .menu-1{
+            display: flex ;
+        }
+        .menu-1>li{
+            padding: 10px;
+            background-color:gray;
+            position: relative;
+        }
+        .menu-1>li~li{
+            border-left: 2px solid red;
+        }
+        .menu-1>li:hover{
+            background-color: green;
+        }
+        .menu-1>li:hover>a{
+            color: white;
+        }
+        .menu-2{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0 ;
+            width: 150px;
+            border: 1px solid #414141;
+            border-top: 0;
+            border-end-start-radius: 4px;
+            border-end-end-radius: 4px;
+            
+        }
+        .menu-1>li:hover .menu-2{
+            display: block;
+        }
+        .menu-2>li{
+            background-color: gray;
+            padding: 10px;
+        }
+        .menu-2>li:hover{
+            background-color: green;
+        }
+        .menu-2>li:hover>a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu-1">
+            <li><a href="#">Trang Chủ</a></li>
+            <li>
+                <a href="#">Khoá học</a>
+                <ul class="menu-2">
+                    <li>
+                        <a href="#">Học SQL</a>
+                        <ul class="menu-3">
+                            <li><a href="#">Học SQL</a></li>
+                            <li><a href="#">Học HTML</a></li>
+                            <li><a href="#">Học Java </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Học HTML</a></li>
+                    <li><a href="#">Học Java </a></li>
+                </ul>
+            </li>
+            <li><a href="#">Dịch Vụ</a></li>
+            <li><a href="#">Hỗ trợ</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

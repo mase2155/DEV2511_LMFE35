@@ -1,0 +1,54 @@
+1. Cách sử dụng CSS 
+    - trên thẻ HTML -style  
+    - trong file HTML - <style></style>
+    - ngoài file HTML - <link href = "đường_dẫn/tên_file.css> </link>
+2.Các cách tương tác CSS với HTML
+    - thông qua tương tác tên thẻ HTML -tên_thẻ
+    - thông qua tương tác tên ID của thẻ HTML -tên_id
+    - thông qua tương tác tên Class của thẻ HTML -tên_class
+    - thông qua tương tác tên thuộc tính ( attr ) của thẻ HTML tên_attr ( [tên_attr])
+3.Một số bộ chọn    
+    - * : chọn all file HTML
+    - tag01 tag02 :
+    - tag01 > tag02 :
+    - tag01 , tag02 :
+    - tag01 + tag02 :
+    - tag01 ~ tag02 : 
+    - :hover :
+    - :after , before : 
+    - ....
+4. Cấp độ ưu tiên trong CSS 
+    - CSS viết sau được ưu tiên sử dụng 
+    - !important -> ID -> Class -> Atributte -> Thẻ HTML
+    - bộ chọn càng gần hoặc càng chi tiết thì càng được ưu tiên sử dụng 
+5. Thuộc tính của CSS - Giá trị thuộc tính 
+    Thuộc tính : 
+                - display : block , hidden , flex ....
+                - font ( size , family , weight , ...) 
+                - color : tên_màu/RGB/#hệ_hex
+                - background ( image , color , ....)
+                - margin/padding : giá_trị + đơn_vị_đo 
+                - ( mix , max ) width/height : giá_trị + đơn_vị_đo
+                - position : fixed/absolute/....
+                - border ( ..... ) : 
+                - border-radius : giá_trị_đường_bo
+                - content : ' ' ( đi với : after/before )
+                - ......
+6. Đơn vị màu 
+7. Đơn vị đo 
+    - %
+    - pixel ( px )
+    - rem
+    - em
+8. Cấu trúc viết CSS 
+
+<style>
+        bộ_chọn_CSS  - dùng để trỏ đến HTML
+        {
+            tên_thuộc_tính_CSS : giá_trị_thuộc_tính - giá trị mà HTML sẽ thay đổi theo
+            tên_thuộc_tính_CSS : giá_trị_thuộc_tính - giá trị mà HTML sẽ thay đổi theo
+            tên_thuộc_tính_CSS : giá_trị_thuộc_tính - giá trị mà HTML sẽ thay đổi theo
+        }
+
+
+</style>
