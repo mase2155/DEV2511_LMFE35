@@ -1,10 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bài tập mẫu Design - Buổi 04</title>
         <style>
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .menu-1{
+            display: flex ;
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        .menu-1{
+            margin-right: 0;
+        }
+        .menu-1>li{
+            margin-right: 10px;
+        }
+        .menu-1>li>a{
+            position: relative;
+            text-decoration: none; 
+            color: #333; 
+            padding: 10px 15px; 
+            display: block; 
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .menu-1>li>a:after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background-color: #b8915e;
+            transition: width 0.3s ease-out , left 0.3s ease-out;
+        }.menu-1>li>a:hover::after{
+            width: 100%;
+            left: 0;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         *{
             margin: 0; 
             padding: 11px;
@@ -15,6 +83,9 @@
     }
         .w-100{
             width: 100%;
+        }
+        .w-60{
+            width: 60%;
         }
         #list-product{
             display: flex;
@@ -47,20 +118,58 @@
             padding-left: 2px;
             padding-right: 2px;
         }
+        .info-company{
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        .info-company{
+            background-color: #333333;
+        }
+        .logo-bo-cong-thuong{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        section{
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        #list-product{
+            background-color: whi;
+        }
+        .contact{
+            font-size: 10px;
+        }
     </style>
     </head>
     <body>
-        <header></header>
+        <header>
+            <nav>
+                <ul class="menu-1">
+                    <li><a href="#">TRANG CHỦ </a></li>
+                    <li>
+                        <a href="#">GIỚI THIỆU</a>
+                    </li>
+                    <li><a href="#">SẢN PHẨM</a></li>
+                    <li><a href="#">TIN TỨC</a></li>
+                    <li><a href="#">ĐỐI TÁC</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                </ul>
+            </nav>
+        </header>
         <section id="list-product">
             <div class="product-box">
                 <div class="image-box">
                     <img class="w-100" src="img/tintuc-4.png" alt="anh01">
                 </div>
                 <div class="title-box">
-                    <h3 class="title">NGẤT NGÂY VỚI 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
+                    <h3 class="title">NGẤT NGÂY VỚI 10 MẪU NỘI THẤT CHUNG CƯ 1
+                        PHÒNG NGỦ ĐẸP</h3>
                 </div>
                 <div class="details-box">
-                    <p class="details">Những căn hộ chung cư mini có diện tích nhỏ ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện đại với những ai có khoản kinh phí " hạn hẹp " </p>
+                    <p class="details">Những căn hộ chung cư mini có diện tích
+                        nhỏ ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện
+                        đại với những ai có khoản kinh phí " hạn hẹp " </p>
                 </div>
             </div>
             <div class="product-box">
@@ -68,10 +177,13 @@
                     <img class="w-100" src="img/tintuc-5.png" alt="anh02">
                 </div>
                 <div class="title-box">
-                    <h3 class="title">25+ MẪU GIƯỜNG NGỦ HỘC KÉO THÔNG MINH CHO CĂN PHÒNG BẠN</h3>
+                    <h3 class="title">25+ MẪU GIƯỜNG NGỦ HỘC KÉO THÔNG MINH CHO
+                        CĂN PHÒNG BẠN</h3>
                 </div>
                 <div class="details-box">
-                    <p class="details">Sự thật là chúng ta dành hết 1/3 cuộc đời chỉ để ngủ , vì thế việc tạo được một giấc ngủ ngon là một điều quan trọng đặc biệt </p>
+                    <p class="details">Sự thật là chúng ta dành hết 1/3 cuộc đời
+                        chỉ để ngủ , vì thế việc tạo được một giấc ngủ ngon là
+                        một điều quan trọng đặc biệt </p>
                 </div>
             </div>
             <div class="product-box">
@@ -79,10 +191,13 @@
                     <img class="w-100" src="img/tintuc-6.png" alt="anh03">
                 </div>
                 <div class="title-box">
-                    <h3 class="title">TUYỆT CHIÊU THIẾT KẾ CHUNG CƯ MINI 2 PHÒNG NGỦ SIÊU ĐẸP</h3>
+                    <h3 class="title">TUYỆT CHIÊU THIẾT KẾ CHUNG CƯ MINI 2 PHÒNG
+                        NGỦ SIÊU ĐẸP</h3>
                 </div>
                 <div class="details-box">
-                    <p class="details">Độ tuổi khởi nghiệp và tự lập ngày càng trẻ hoá trong xã hội hiện đại thời nay , thế nên việc " thiết kế căn hộ chung cư mini 2 phòng ngủ " </p>
+                    <p class="details">Độ tuổi khởi nghiệp và tự lập ngày càng
+                        trẻ hoá trong xã hội hiện đại thời nay , thế nên việc
+                        " thiết kế căn hộ chung cư mini 2 phòng ngủ " </p>
                 </div>
             </div>
             <div class="product-box">
@@ -90,10 +205,13 @@
                     <img class="w-100" src="img/tintuc-4.png" alt="anh01">
                 </div>
                 <div class="title-box">
-                    <h3 class="title">NGẤT NGÂY VỚI 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
+                    <h3 class="title">NGẤT NGÂY VỚI 10 MẪU NỘI THẤT CHUNG CƯ 1
+                        PHÒNG NGỦ ĐẸP</h3>
                 </div>
                 <div class="details-box">
-                    <p class="details">Những căn hộ chung cư mini có diện tích nhỏ ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện đại với những ai có khoản kinh phí " hạn hẹp " </p>
+                    <p class="details">Những căn hộ chung cư mini có diện tích
+                        nhỏ ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện
+                        đại với những ai có khoản kinh phí " hạn hẹp " </p>
                 </div>
             </div>
             <div class="product-box">
@@ -101,10 +219,13 @@
                     <img class="w-100" src="img/tintuc-5.png" alt="anh02">
                 </div>
                 <div class="title-box">
-                    <h3 class="title">25+ MẪU GIƯỜNG NGỦ HỘC KÉO THÔNG MINH CHO CĂN PHÒNG BẠN</h3>
+                    <h3 class="title">25+ MẪU GIƯỜNG NGỦ HỘC KÉO THÔNG MINH CHO
+                        CĂN PHÒNG BẠN</h3>
                 </div>
                 <div class="details-box">
-                    <p class="details">Sự thật là chúng ta dành hết 1/3 cuộc đời chỉ để ngủ , vì thế việc tạo được một giấc ngủ ngon là một điều quan trọng đặc biệt</p>
+                    <p class="details">Sự thật là chúng ta dành hết 1/3 cuộc đời
+                        chỉ để ngủ , vì thế việc tạo được một giấc ngủ ngon là
+                        một điều quan trọng đặc biệt</p>
                 </div>
             </div>
             <div class="product-box">
@@ -112,10 +233,13 @@
                     <img class="w-100" src="img/tintuc-6.png" alt="anh03">
                 </div>
                 <div class="title-box">
-                    <h3 class="title">TUYỆT CHIÊU THIẾT KẾ CHUNG CƯ MINI 2 PHÒNG NGỦ SIÊU ĐẸP</h3>
+                    <h3 class="title">TUYỆT CHIÊU THIẾT KẾ CHUNG CƯ MINI 2 PHÒNG
+                        NGỦ SIÊU ĐẸP</h3>
                 </div>
                 <div class="details-box">
-                    <p class="details">Độ tuổi khởi nghiệp và tự lập ngày càng trẻ hoá trong xã hội hiện đại thời nay , thế nên việc " thiết kế căn hộ chung cư mini 2 phòng ngủ " </p>
+                    <p class="details">Độ tuổi khởi nghiệp và tự lập ngày càng
+                        trẻ hoá trong xã hội hiện đại thời nay , thế nên việc
+                        " thiết kế căn hộ chung cư mini 2 phòng ngủ " </p>
                 </div>
             </div>
             <div class="product-box">
@@ -123,10 +247,13 @@
                     <img class="w-100" src="img/tintuc-4.png" alt="anh01">
                 </div>
                 <div class="title-box">
-                    <h3 class="title">NGẤT NGÂY VỚI 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
+                    <h3 class="title">NGẤT NGÂY VỚI 10 MẪU NỘI THẤT CHUNG CƯ 1
+                        PHÒNG NGỦ ĐẸP</h3>
                 </div>
                 <div class="details-box">
-                    <p class="details">Những căn hộ chung cư mini có diện tích nhỏ ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện đại với những ai có khoản kinh phí " hạn hẹp " </p>
+                    <p class="details">Những căn hộ chung cư mini có diện tích
+                        nhỏ ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện
+                        đại với những ai có khoản kinh phí " hạn hẹp " </p>
                 </div>
             </div>
             <div class="product-box">
@@ -134,10 +261,13 @@
                     <img class="w-100" src="img/tintuc-5.png" alt="anh02">
                 </div>
                 <div class="title-box">
-                    <h3 class="title">25+ MẪU GIƯỜNG NGỦ HỘC KÉO THÔNG MINH CHO CĂN PHÒNG BẠN</h3>
+                    <h3 class="title">25+ MẪU GIƯỜNG NGỦ HỘC KÉO THÔNG MINH CHO
+                        CĂN PHÒNG BẠN</h3>
                 </div>
                 <div class="details-box">
-                    <p class="details">Sự thật là chúng ta dành hết 1/3 cuộc đời chỉ để ngủ , vì thế việc tạo được một giấc ngủ ngon là một điều quan trọng đặc biệt </p>
+                    <p class="details">Sự thật là chúng ta dành hết 1/3 cuộc đời
+                        chỉ để ngủ , vì thế việc tạo được một giấc ngủ ngon là
+                        một điều quan trọng đặc biệt </p>
                 </div>
             </div>
             <div class="product-box">
@@ -145,15 +275,43 @@
                     <img class="w-100" src="img/tintuc-6.png" alt="anh03">
                 </div>
                 <div class="title-box">
-                    <h3 class="title">TUYỆT CHIÊU THIẾT KẾ CHUNG CƯ MINI 2 PHÒNG NGỦ SIÊU ĐẸP</h3>
+                    <h3 class="title">TUYỆT CHIÊU THIẾT KẾ CHUNG CƯ MINI 2 PHÒNG
+                        NGỦ SIÊU ĐẸP</h3>
                 </div>
                 <div class="details-box">
-                    <p class="details">Độ tuổi khởi nghiệp và tự lập ngày càng trẻ hoá trong xã hội hiện đại thời nay , thế nên việc " thiết kế căn hộ chung cư mini 2 phòng ngủ " </p>
+                    <p class="details">Độ tuổi khởi nghiệp và tự lập ngày càng
+                        trẻ hoá trong xã hội hiện đại thời nay , thế nên việc
+                        " thiết kế căn hộ chung cư mini 2 phòng ngủ " </p>
                 </div>
             </div>
-            </section>
-            <footer>
-
-            </footer>
-        </body>
-    </html>
+        </section>
+        <footer class="info-company">
+            <div class="contact">
+                <h3>Thông Tin Chung</h3>
+                <h2>CÔNG TY TNHH HOÀNG HOAN</h2>
+                <i class="fa-solid fa-phone"> 0999.999.999</i>
+                <i class="fa-solid fa-envelope"> cskh@hoanghan.vn</i>
+                <i class="fa-solid fa-location-dot">Số 1 Nguyễn Trãi , Thanh
+                    Xuân , Hà Nội</i>
+            </div>
+            <div class="about-us">
+                <h3>VỀ CHÚNG TÔI</h3>
+                <p>Giới Thiệu</p>
+                <p>Sản Phẩm</p>
+                <p>Đối Tác</p>
+                <p>Liên hệ</p>
+            </div>
+            <div class="connect-us">
+                <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <div class="logo-bo-cong-thuong">
+                    <img class="w-60"
+                        src="img/logo-da-thong-bao-bo-cong-thuong.webp"
+                        alt="logo-bo-cong-thuong">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
