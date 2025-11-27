@@ -1,57 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài Toán Menu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-size: 16px;
-        }
-        ul{
-            list-style: none;
-        }
-        a{
-            text-decoration: none;
-        }
-        header{
-            display: flex;
-            justify-content: space-between;
-        }
-        .header-nav>ul{
-            display: flex;
-        }
-        ul>li{
-            padding: 0.5rem;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="header-logo">
-            <img class="w-100" src="img/tải xuống (2).jfif" alt="logoDev">
-        </div>
-    </header>
-    <nav class="header-nav">
-        <ul>
-            <li><a href="#">Trang Chu</a></li>
-            <li><a href="#">Trang Chu</a></li>
-            <li><a href="#">Trang Chu</a></li>
-            <li><a href="#">Trang Chu</a></li>
-            <li><a href="#">Trang Chu</a></li>
-        </ul>
-    </nav>
-    <nav class="header-nav-mobile">
-        <ul>
-            <li><a href="#">Trang Chu</a></li>
-            <li><a href="#">Trang Chu</a></li>
-            <li><a href="#">Trang Chu</a></li>
-            <li><a href="#">Trang Chu</a></li>
-            <li><a href="#">Trang Chu</a></li>
-        </ul>
-    </nav>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-size: 16px;
+            }
+            ul{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+            }
+            .w-100{
+                width: 100%;
+            }
+            .container{
+                max-width: 1200px;
+                margin: auto;
+            }
+
+            header>.container{
+                display:flex ;
+                justify-content: space-between;
+            }
+            .header-nav>ul{
+                display: flex;
+                height: 100%;
+                align-items: center;           
+            }
+            
+            ul>li{
+                padding: 0.5rem;
+                text-transform: uppercase;
+            }
+            ul>li>a{
+                color: #000;
+            }
+            .header-nav-moblie{
+                display: none;
+            }
+            @media (max-width: 767.98px) {
+                 .header-nav{
+                    display: none;
+                }
+                .header-nav-moblie{
+                    display: block;                    
+                }
+                .header-nav-moblie>div>ul{
+                    display: none;
+                    position: fixed;
+                    top: 3.5rem;
+                    /* left: 50%;
+                    transform: translateX(-50%); */
+                    width: 100%;
+                    left: 0;
+                    text-align: center;
+                }
+                .header-logo{
+                    width: 3.5rem;
+                }
+                .header-nav-moblie>div:hover>ul{
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-logo">
+                    <img class="w-100" src="img/logo-hoanghoan.jpg"
+                        alt="logo-hoanghoan">
+                </div>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#">Thông tin</a></li>
+                    </ul>
+                </nav>
+                <nav class="header-nav-moblie">
+                    <div>
+                        <span><i class="fa-solid fa-bars"></i></span>
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Thông tin</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+    </body>
 </html>
