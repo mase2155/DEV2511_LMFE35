@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bài tập mẫu Design - Buổi 04</title>
+        <style>
+        *{
+            margin: 0; 
+            padding: 11px;
+            font-size: 20px;
+        }
+        body {
+        background-color: white; 
+    }
+        .w-100{
+            width: 100%;
+        }
+        #list-product{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            color: white;
+        }
+        .product-box{
+            width: 30%;
+            border: 0px solid #ccc;
+            flex-wrap: wrap;
+        }
+        .product-box>div{
+            padding: 0.5rem;
+        }
+        .title-box{
+            font-weight: bold;
+            color: chocolate;
+        }
+        .details-box{
+            font-size: 0.75rem;
+            color: black;
+        }
+        .title-box,.details-box{
+            text-align: center;
+        }
+        .image-box {
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+    </style>
+    </head>
+    <body>
+        <header></header>
+        <section id="list-product">
+            <div class="product-box">
+                <div class="image-box">
+                    <img class="w-100" src="img/tintuc-4.png" alt="anh01">
+                </div>
+                <div class="title-box">
+                    <h3 class="title">NGẤT NGÂY VỚI 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
+                </div>
+                <div class="details-box">
+                    <p class="details">Những căn hộ chung cư mini có diện tích nhỏ ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện đại với những ai có khoản kinh phí " hạn hẹp " </p>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="image-box">
+                    <img class="w-100" src="img/tintuc-5.png" alt="anh02">
+                </div>
+                <div class="title-box">
+                    <h3 class="title">25+ MẪU GIƯỜNG NGỦ HỘC KÉO THÔNG MINH CHO CĂN PHÒNG BẠN</h3>
+                </div>
+                <div class="details-box">
+                    <p class="details">Sự thật là chúng ta dành hết 1/3 cuộc đời chỉ để ngủ , vì thế việc tạo được một giấc ngủ ngon là một điều quan trọng đặc biệt </p>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="image-box">
+                    <img class="w-100" src="img/tintuc-6.png" alt="anh03">
+                </div>
+                <div class="title-box">
+                    <h3 class="title">TUYỆT CHIÊU THIẾT KẾ CHUNG CƯ MINI 2 PHÒNG NGỦ SIÊU ĐẸP</h3>
+                </div>
+                <div class="details-box">
+                    <p class="details">Độ tuổi khởi nghiệp và tự lập ngày càng trẻ hoá trong xã hội hiện đại thời nay , thế nên việc " thiết kế căn hộ chung cư mini 2 phòng ngủ " </p>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="image-box">
+                    <img class="w-100" src="img/tintuc-4.png" alt="anh01">
+                </div>
+                <div class="title-box">
+                    <h3 class="title">NGẤT NGÂY VỚI 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
+                </div>
+                <div class="details-box">
+                    <p class="details">Những căn hộ chung cư mini có diện tích nhỏ ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện đại với những ai có khoản kinh phí " hạn hẹp " </p>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="image-box">
+                    <img class="w-100" src="img/tintuc-5.png" alt="anh02">
+                </div>
+                <div class="title-box">
+                    <h3 class="title">25+ MẪU GIƯỜNG NGỦ HỘC KÉO THÔNG MINH CHO CĂN PHÒNG BẠN</h3>
+                </div>
+                <div class="details-box">
+                    <p class="details">Sự thật là chúng ta dành hết 1/3 cuộc đời chỉ để ngủ , vì thế việc tạo được một giấc ngủ ngon là một điều quan trọng đặc biệt</p>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="image-box">
+                    <img class="w-100" src="img/tintuc-6.png" alt="anh03">
+                </div>
+                <div class="title-box">
+                    <h3 class="title">TUYỆT CHIÊU THIẾT KẾ CHUNG CƯ MINI 2 PHÒNG NGỦ SIÊU ĐẸP</h3>
+                </div>
+                <div class="details-box">
+                    <p class="details">Độ tuổi khởi nghiệp và tự lập ngày càng trẻ hoá trong xã hội hiện đại thời nay , thế nên việc " thiết kế căn hộ chung cư mini 2 phòng ngủ " </p>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="image-box">
+                    <img class="w-100" src="img/tintuc-4.png" alt="anh01">
+                </div>
+                <div class="title-box">
+                    <h3 class="title">NGẤT NGÂY VỚI 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
+                </div>
+                <div class="details-box">
+                    <p class="details">Những căn hộ chung cư mini có diện tích nhỏ ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện đại với những ai có khoản kinh phí " hạn hẹp " </p>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="image-box">
+                    <img class="w-100" src="img/tintuc-5.png" alt="anh02">
+                </div>
+                <div class="title-box">
+                    <h3 class="title">25+ MẪU GIƯỜNG NGỦ HỘC KÉO THÔNG MINH CHO CĂN PHÒNG BẠN</h3>
+                </div>
+                <div class="details-box">
+                    <p class="details">Sự thật là chúng ta dành hết 1/3 cuộc đời chỉ để ngủ , vì thế việc tạo được một giấc ngủ ngon là một điều quan trọng đặc biệt </p>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="image-box">
+                    <img class="w-100" src="img/tintuc-6.png" alt="anh03">
+                </div>
+                <div class="title-box">
+                    <h3 class="title">TUYỆT CHIÊU THIẾT KẾ CHUNG CƯ MINI 2 PHÒNG NGỦ SIÊU ĐẸP</h3>
+                </div>
+                <div class="details-box">
+                    <p class="details">Độ tuổi khởi nghiệp và tự lập ngày càng trẻ hoá trong xã hội hiện đại thời nay , thế nên việc " thiết kế căn hộ chung cư mini 2 phòng ngủ " </p>
+                </div>
+            </div>
+            </section>
+            <footer>
+
+            </footer>
+        </body>
+    </html>
