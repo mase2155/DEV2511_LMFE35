@@ -16,6 +16,33 @@
             text-decoration: none;
             color: black;
         }
+        .container{
+                max-width: 1200px;
+                margin: auto;
+            }
+
+            header>.container{
+                display:flex ;
+                justify-content: space-between;
+            }
+            .header-nav>ul{
+                display: flex;
+                height: 100%;
+                align-items: center;           
+            }
+            .header-nav>ul{
+                display: flex;
+                height: 100%;
+                align-items: center;           
+            }
+            
+            ul>li{
+                padding: 0.5rem;
+                text-transform: uppercase;
+            }
+            ul>li>a{
+                color: #000;
+            }
         .menu-1{
             display: flex ;
             list-style: none;
@@ -122,18 +149,18 @@
     </head>
     <body>
         <header>
-            <nav>
-                <ul class="menu-1">
-                    <li><a href="#">TRANG CHỦ </a></li>
-                    <li>
-                        <a href="#">GIỚI THIỆU</a>
-                    </li>
-                    <li><a href="#">SẢN PHẨM</a></li>
-                    <li><a href="#">TIN TỨC</a></li>
-                    <li><a href="#">ĐỐI TÁC</a></li>
-                    <li><a href="#">LIÊN HỆ</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <div class="header-logo">
+                    <img src="img/logo.png" alt="logo-hoang-hoan">
+                </div>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#">Thông tin</a></li>
+                    </ul>>
         </header>
         <section id="list-product">
             <div class="product-box">
