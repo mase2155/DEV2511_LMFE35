@@ -29,13 +29,7 @@
                 display: flex;
                 height: 100%;
                 align-items: center;           
-            }
-            .header-nav>ul{
-                display: flex;
-                height: 100%;
-                align-items: center;           
-            }
-            
+            }            
             ul>li{
                 padding: 0.5rem;
                 text-transform: uppercase;
@@ -43,20 +37,20 @@
             ul>li>a{
                 color: #000;
             }
-        .menu-1{
+        .header-nav{
             display: flex ;
             list-style: none;
             text-align: center;
             padding: 0;
             margin: 0;
         }
-        .menu-1{
+        .header-nav{
             margin-right: 0;
         }
-        .menu-1>li{
+        .header-nav>li{
             margin-right: 10px;
         }
-        .menu-1>li>a{
+        .header-nav>li>a{
             position: relative;
             text-decoration: none; 
             color: #333; 
@@ -65,7 +59,11 @@
             font-weight: bold;
             transition: color 0.3s ease;
         }
-        .menu-1>li>a:after{
+        .header-nav>ul>li>a:hover::after{
+            width: 100%;
+            left: 0;
+        }
+        .header-nav>ul>li>a:after{
             content: "";
             position: absolute;
             bottom: 0;
@@ -74,10 +72,6 @@
             height: 3px;
             background-color: #b8915e;
             transition: width 0.3s ease-out , left 0.3s ease-out;
-        }
-        .header-nav>li>a:hover::after{
-            width: 100%;
-            left: 0;
         }
         *{
             margin: 0; 
@@ -216,11 +210,11 @@
                 </div>
                 <nav class="header-nav">
                     <ul>
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Sản phẩm</a></li>
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Liên hệ</a></li>
-                        <li><a href="#">Thông tin</a></li>
+                        <li> <a href="#">Trang chủ</a> </li>
+                        <li> <a href="#">Sản phẩm</a> </li>
+                        <li> <a href="#">Giới thiệu</a> </li>
+                        <li> <a href="#">Liên hệ</a> </li>
+                        <li> <a href="#">Thông tin</a> </li>
                     </ul>
         </header>
         <section id="list-product">
