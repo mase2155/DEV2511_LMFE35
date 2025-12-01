@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <script>
+        // Khai báo ; gán + gọi ( get + set )  biến , mảng , đối tượng ....
+            1.1. Khai báo biến 
+                // var , let , const - kiểu dữ liệu 
+                syntax : var | let | const ten_bien
+                var a ;
+                let b ;
+                const PI = 3.14;
+            1.2. Gán giá trị biến
+            a=10;
+            b = 20;
+            console.log();
+            console.log();
+        //Các toán tử trong JS
+        //Câu điều kiện
+            // If -else : 
+            //switch -case :    
+            
+        //Vòng lặp
+        // Hàm-
+        4.1. Cách khai báo hàm :
+        // function ten_ham ( [tham_so_1 , tham_so_2 , ... ] ){       khối lệnh thực thi    }
+        // function tinhTong ( a , b )
+        // { return a + b  }
+        4.2. Gọi hàm : 
+        // console.log ( a + b )
+        //Mảng
+        5.1. Đối tượng ( Object)
+        let nguoi =  {
+            hoTen : 'Nguyen Van A ',
+            tuoi : 30 ,
+            isMarried : false ,
+            displayInfo: function () {
+                 console.log( 'Họ Tên : ' nguoi.hoTen);
+                 console.log('Tuổi : ', nguoi.tuoi    );
+                 console.log('isMarried ', nguoi.isMarried);
+            }
+        };
+        let nguoi = { }
+        console.log( 'Họ Tên : ' nguoi.hoTen);
+        console.log('Tuổi : ', nguoi.tuoi    );
+        console.log('isMarried ,     ' , nguoi.isMarried);
+
+
+        hoặc : 
+
+        nguoi.displayInfo();
+
+
+        // Một số hàm trong JS : alert ; prompt ; confirm
+        // Hàm đưa ra thông báo :
+        alert('Hello DevMaster');
+        //Hàm nhập dữ liệu :
+        alert('Chào bạn ' + name);
+        //Hàm xác nhận :
+        var isOk = confirm('Bạn có đồng ý hay không ?');
+        console.log('isOk = ' isOk);   
+
+    </script>
+    </body>
+</html>
