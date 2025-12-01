@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng JS</title>
+</head>
+<body>
+    <!-- Cách 1 : JS Inline - JS trong thẻ HTML -->
+     <button onclick="alert('JS Inline')" >Click Me</button>
+     <br>
+     <!-- Cách 2 : JS internal - JS trong file HTML -->
+      <script>
+        function showMessage (){
+            alert('JS Internal');
+        }
+        showMessage();
+      </script>
+      <!-- Cách 3 : JS External - JS ngoài file HTML -->
+       <script src="js/index.js"></script>
+</body>
+</html>
