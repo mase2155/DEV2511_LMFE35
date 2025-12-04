@@ -21,7 +21,60 @@
         document.write("Mẹ là ngọn gió của con suốt đời.<br />");
         document.write("</div>");
     </script>
+    <script>
     
+    var so_a = prompt("Bạn hãy nhập vào số a :");
+    var so_b = prompt("Bạn hãy nhập vào số b :");
+    var so_c = prompt("Bạn hãy nhập vào số c :");
+
+    if(so_a==0){
+        
+        ptb1(so_b,so_c);
+    }else{
+        
+        ptb2(so_a,so_b,so_c);
+    }
+
+    function ptb1(b,c){
+        if(b==0){
+            if(c==0){
+                document.write("Phương trình vô số nghiệm");
+            }else{
+                document.write("Phương trình vô nghiệm");
+            }
+        }else{
+            nghiem = -b/c;
+            document.write("Phương trình có nghiệp là : "+nghiem);
+        }
+    }
+    </script>
+    <script>
+    var number = prompt("Nhập vào một số có 2 chữ số bất kỳ"); 
+    
+    document.write("Bạn vừa nhập vào số :"+number+"<br />");
+    
+    var totalLe = 0;
+    var totalChan = 0; // Đã bổ sung khai báo biến để chương trình chạy đúng
+
+    document.write("Các số lẻ từ 1 đến số :"+number+"<br />");
+    for(i=1;i<=number;i++){
+        if(i%2 !=0){
+            document.write(i+"<br />");
+            totalLe += i;
+        }
+    }
+    
+    document.write("Các số chẵn từ 2 đến số :"+number+"<br />");
+    for(i=1;i<=number;i++){ 
+        if(i%2 ==0){
+            document.write(i+"<br />");
+            totalChan += i;
+        }
+    }
+    
+    document.write("Tổng các số lẻ : "+totalLe+"<br />");
+    document.write("Tổng các số chẵn : "+totalChan);
+    </script>
 </body>
 </html>
 
