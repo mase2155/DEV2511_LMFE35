@@ -75,6 +75,135 @@
     document.write("Tổng các số lẻ : "+totalLe+"<br />");
     document.write("Tổng các số chẵn : "+totalChan);
     </script>
+    <body>
+<script>
+    var txt = "Cộng hòa xã hội chủ nghĩa Việt Nam";
+    document.write("Độ dài của chuỗi là : " + txt.length + "<br />");
+    document.write("Mã char code của từng ký tự : <br />");
+    for(i=0;i<txt.length;i++){
+        document.write(txt[i] + "<>" + txt[i].charCodeAt(0) + "<br />");
+    }
+</script>
+<script>
+    var number = prompt("Nhập vào một số có 2 chữ số bất kỳ");
+    document.write("Bạn vừa nhập vào số :"+number+"<br />");
+    document.write("Các số lẻ từ 1 đến số :"+number+"<br />");
+    
+    var totalLe = 0; 
+    var totalChan = 0; 
+
+    for(i=1;i<=number;i++){
+        if(i%2 !=0){
+            document.write(i+"<br />");
+            totalLe += i;
+        }
+    }
+    
+    document.write("Các số chẵn từ 2 đến số :"+number+"<br />");
+    for(i=1;i<=number;i++){
+        if(i%2 ==0){
+            document.write(i+"<br />");
+            totalChan += i;
+        }
+    }
+    
+    document.write("Tổng các số lẻ : "+totalLe+"<br />");
+    document.write("Tổng các số chẵn : "+totalChan);
+
+</script>
+<script>
+    var newText="";
+    var txt = "học lập trình web";
+    document.write("Độ dài của chuỗi là : " + txt.length + "<br />");
+    document.write("Mã char code của từng ký tự : <br />");
+    
+    for(i=0;i<txt.length;i++){
+        if(i==0){
+            newText += txt[i].charCodeAt(0);
+        }else{
+            newText += "," + txt[i].charCodeAt(0);
+        }
+    }
+    
+    document.write("Chuỗi Charcode : <br />" + newText + "<br />");
+    var arrText = newText.split(",");
+    
+    for(i=0;i<arrText.length;i++){
+        document.write(String.fromCharCode(arrText[i]));
+    }
+</script>
+<script>
+    var sochan = "";
+    var sole = "";
+    var tongchan = 0;
+    var tongle = 0;
+    
+    var dataArr = [4,6,9,11,34,22,57,68,90,21,35,77];
+    
+    document.write("Số phần tử trong mảng: " + dataArr.length + "<br />");
+    
+    for(i=0; i<dataArr.length; i++) {
+        if(dataArr[i] % 2 == 0){
+            tongchan += dataArr[i];
+            
+            if(sochan.length == 0){
+                sochan = dataArr[i];
+            }else{
+                sochan += "," + dataArr[i];
+            }
+        }
+        else{
+            tongle += dataArr[i];
+            
+            if(sole.length == 0){
+                sole = dataArr[i];
+            }else{
+                sole += "," + dataArr[i];
+            }
+        }
+    }
+    
+    document.write("Trong mảng có các số chẵn là: " + sochan + "<br />");
+    document.write("Tổng các số chẵn: " + tongchan + "<br />");
+    document.write("Trong mảng có các số lẻ là: " + sole + "<br />");
+    document.write("Tổng các số lẻ: " + tongle + "<br />");
+</script>
+<script>
+    var txt = "Cộng hòa xã hội chủ nghĩa Việt Nam";
+    document.write("Độ dài của chuỗi là : " + txt.length + "<br />");
+    document.write("Mã char code của từng ký tự : <br />");
+    
+    for(i=0;i<txt.length;i++){
+        document.write(txt[i] + "<>" + txt[i].charCodeAt(0) + "<br />");
+    }
+</script>
+<script>
+    var number = prompt("Nhập vào một số có 2 chữ số bất kỳ");
+    document.write("Bạn vừa nhập vào số :"+number+"<br />");
+    document.write("Các số lẻ từ 1 đến số :"+number+"<br />");
+    
+    var totalLe = 0; 
+    var totalChan = 0; 
+
+    for(i=1;i<=number;i++){
+        if(i%2 !=0){
+            document.write(i+"<br />");
+            totalLe += i;
+        }
+    }
+    
+    document.write("Các số chẵn từ 2 đến số :"+number+"<br />");
+    for(i=1;i<=number;i++){
+        if(i%2 ==0){
+            document.write(i+"<br />");
+            totalChan += i;
+        }
+    }
+    
+    document.write("Tổng các số lẻ : "+totalLe+"<br />");
+    document.write("Tổng các số chẵn : "+totalChan);
+
+</script>
 </body>
 </html>
 
