@@ -48,3 +48,16 @@
 - Xử lí HTML/CSS :
                 + DOM HTML :  vị_trí_thẻ_HTML.innerHTML = giá_trị
                 + DOM CSS : vị_trí_thẻ_HTML.style.thuộc_tính_CSS = giá_trị
+-Navigation :
+            + parent , subling , child
+3.Jquery
+- Tương tác với thẻ HTML - $('CSS_selector')
+- Bắt sự kiện : 
+                + vị_trí_thẻ_HTML.on('sự_kiện' , hàm_xử_lí())
+
+- Xử lí HTML/CSS :
+                + HTML : vị_trí_thẻ_HTML.html()/ append()
+                + CSS : vị_trí_thẻ_HTML.css('thuộc_tính_CSS') - get giá trị  
+                         vị_trí_thẻ_HTML.css('thuộc_tính_CSS' , 'giá_trị') - set giá trị        
+-Navigation :
+            + vị_trí_thẻ_HTML.parent() || subling () || child()           
