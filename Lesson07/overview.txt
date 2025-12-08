@@ -1,0 +1,50 @@
+1. Ngôn ngữ JavaScript
+1..  Biến
+    + Khai báo 
+    + Get / Set
+
+1.2. Cấu trúc điều khiển 
+    + If else
+    + Switch case
+1.3. Vòng lặp
+    + For 
+    + Do While / While 
+    + Foreach, for in ....
+1.4. Hàm (Function)
+    + Khai báo : function tên_hàm(tham_số ....){}
+    + Sử dụng : tên_hàm(truyền tham_số ...){}
+1.5. Biểu thức : toán học  , logic , .... 
+    + toán học
+    + logic
+    + so sánh == , === 
+    + .... 
+1.6. Object 
+    + Khai báo 
+    + Get / Set
+1.7. Mảng
+    + Khai báo 
+    + Get / Set
+1.8. Hàm xử lí chuỗi / mảng 
+    + sử dụng : tên_chuỗi / mảng .tên_hàm_xử_lí(truyền_tham_số)
+1.9. Rengular Execption
+    + var tên_regx = /cấu_trúc_regx/
+    + sử dụng : tên_regx.test(truyền_tham_số)  = > true/false
+1.10. Date () 
+    + new Date() - time hiện tại 
+    + lấy giá trị của thời gian thì sẽ dùng các hàm liên quan đến Date : getYear , getDay , getMonth ....
+2.. DOM
+- DOM Element :
+    + thông qua ID : document.getElementById('tên_id')
+    + thông qua tên thẻ :document.getElementByTagName('tên_thẻ_HTML')
+    + thông qua tên class : document.getElementByClassName('tên_class')
+    + thông qua cú pháp CSS Selector : document.querySelectorAll('#tên_id / .tên_class / tên_HTML')
+
+
+- Bắt sự kiện : 
+                + DOM Event : onclick , ondbclick , onblur ,... 
+                - viết trên thẻ HTML : on_sự_kiện = "hàm_xử_lí"
+                + DOM Listener : vị_trí_thẻ_HTML.addEventListener('sự_kiện , hàm_xử_lí ())
+
+- Xử lí HTML/CSS :
+                + DOM HTML :  vị_trí_thẻ_HTML.innerHTML = giá_trị
+                + DOM CSS : vị_trí_thẻ_HTML.style.thuộc_tính_CSS = giá_trị
