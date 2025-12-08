@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form đăng ký</title>
+        <style>
+            .err {
+                color: red;
+                font-size: 12px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <p class="err">Không được để trống</p>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <p class="err">Không được để trống</p>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <p class="err">Không được để trống</p>
+            <br><br>
+            <input type="submit" value="Đăng ký">
+        </form>
+        <script>
+           var inp = document.getElementsByTagName('input');
+
+           for (var i = 0; i < inp.length; i++) {
+                inp[i].addEventListener('blur', function() {
+                    console.log(this);
+                    console.log(this.value); 
+                    console.log(this.nextElementSibling);
+                    if (this.value === "" ) {
+                        this.nextElementSibling.style.display = "block";
+                    } else {
+                        this.nextElementSibling.style.display = "none";
+                    }
+            });
+           }
+
+
+       </script>
+    </body>
+</html>

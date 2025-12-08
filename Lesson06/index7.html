@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form đăng ký</title>
+        <style>
+            .err {
+                color: red;
+                font-size: 12px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action>
+            <label for="username">Username:</label>
+            <input onblur="checkBlankUser()" type="text" id="username"
+                name="username">
+            <p class="err">Không được để trống</p>
+            <br><br>
+            <label for="email">Email:</label>
+            <input onblur="checkBlank(event)" type="email" id="email"
+                name="email">
+            <p class="err">Không được để trống</p>
+            <br><br>
+            <label for="password">Password:</label>
+            <input onblur="checkBlank(event)" type="password" id="password"
+                name="password">
+            <p class="err">Không được để trống</p>
+            <br><br>
+            <input type="submit" value="Đăng ký">
+        </form>
+        <script>
+            function checkBlankUser() {
+                var username = document.getElementById("username").value;
+                if (username === "" ) {
+                    document.getElementsByClassName("err")[0].style.display = "block";
+                    
+                } else {
+                    document.getElementsByClassName("err")[0].style.display = "none";
+                }
+            }
+            
+            function checkBlank(event) {
+                console.log(event.target);
+                console.log(event.target.id)
+                console.log(event.target.value);
+                if (event.target.value === "" ) {
+                   event.target.nextElementSibling.style.display = "block";
+                } else {
+                    event.target.nextElementSibling.style.display = "none";
+                }
+                
+            }
+       
+       </script>
+    </body>
+</html>

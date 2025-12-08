@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Exception</title>
+</head>
+<body>
+
+<script>
+    // Regular Exception
+    var regx = /^[a-zA-Z0-9]{6,10}$/;
+
+    var testString = "Devmaster";
+    if (regx.test(testString)) {
+        console.log("Chuỗi hợp lệ!");
+    } else {
+        console.log("Chuỗi không hợp lệ! Chuỗi phải từ 6 đến 10 ký tự bao gồm chữ cái và số.");
+    }
+
+
+    var time = new Date();
+    console.log("Giờ hiện tại: " + time);
+    console.log("Năm hiện tại: " + time.getFullYear());
+    // console.log("Tháng hiện tại: " + new Date('yyyy-MM-dd'));
+    time.setFullYear(2023);
+    console.log("Năm sau khi thay đổi: " + time.getFullYear());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM tương tác với thẻ HTML</title>
+    </head>
+    <body>
+
+        <h2 id="h2-id">Tương tác thông ID của thẻ HTML</h2>
+        <div>
+            <p class="class-name">
+                Tương tác thông class của thẻ HTML
+            </p>
+            <p class="class-name">
+                Tương tác thông class của thẻ HTML
+            </p>
+            <p class="class-name">
+                Tương tác thông class của thẻ HTML
+            </p>
+        </div>
+        <div id="box-2">
+            <p>Tương tác thông qua querySelector</p>
+            <p>Tương tác thông qua querySelector</p>
+            <p>Tương tác thông qua querySelector</p>
+        </div>
+        <script>
+            // DOM tưong tác vớI HTML 4 cách cơ bản
+            // Cách 1: Tương tác thông ID của thẻ HTML
+            // systax: document.getElementById("id-cua-the-html")
+            var h2Element = document.getElementById("h2-id");
+            h2Element.style.color = "red";
+            h2Element.innerHTML = "Đã thay đổi nội dung thẻ H2 có id là h2-id";
+
+            // Cách 2: Tương tác thông class của thẻ HTML
+            // systax: document.getElementsByClassName("class-cua-the-html")
+            var classElements = document.getElementsByClassName("class-name");
+            classElements[2].style.color = "blue";
+            for (var i = 0; i < classElements.length; i++) {
+                classElements[i].style.background = "yellow";
+            }
+            // Cách 3: Tương tác thông tag name của thẻ HTML
+            // systax: document.getElementsByTagName("tag-name-cua-the-html")
+            var pElements = document.getElementsByTagName("p");
+            pElements[0].style.fontSize = "40px";
+            pElements[0].style.fontWeight = "bold";
+
+            // Cách 4: Tương tác thông qua querySelector và querySelectorAll
+            // systax: document.querySelector("selector-css")
+            // systax: document.querySelectorAll("selector-css")
+            var box2Element = document.querySelectorAll("#box-2 p");
+            box2Element[1].style.border = "2px solid black";
+
+        </script>
+    </body>
+</html>
