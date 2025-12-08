@@ -17,6 +17,7 @@
             <label for="username">Username:</label>
             <input type="text" id="username" name="username">
             <p class="err">Không được để trống</p>
+            <p class="err">Username không đúng định dạng</p>
             <br><br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email">
@@ -32,6 +33,7 @@
         </form>
         <script src="js/jquery-3.7.1.min.js"></script>
         <script>
+            var regexUsername = /^(?=.*[A-Z]).{6,}$/
             var regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
             var regexPassword = /^(?=.*[A-Z])(?=.*[a-zA-Z0-9]).{8,}$/
             $('input').on('blur' , function() {
@@ -42,6 +44,15 @@
                 } else {
                     $(this).next('.err').hide();
                 }
+
+            if(this.name === 'username'){
+                if(regexUsername.test(this.value)){
+                    $(this).next('.err').next('.err').hide();
+                } else{
+                    $(this).next('.err').next('.err').show();
+                }
+            } 
+                
             if(this.type === 'email'){
                 if (!regexEmail.test(this.value)){
                     $(this).next('.err').next('.err').show();
@@ -50,8 +61,10 @@
                 }
             }
 
-            if(this.type === 'password'){
-                if(!regexPassword.test(this.value)){
+            if (this.type ==='password'){
+                if (regexPassword.test(this.value)){
+                    $(this).next('.err').hide();
+                } else {
                     $(this).next('.err').next('.err').show();
                 }
             }
