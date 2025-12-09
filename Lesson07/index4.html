@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List Cart</title>
+        <style>
+            table {
+                width: 80%;
+                margin: auto;
+                border-collapse: collapse;
+            }
+            th, td {
+                text-align: center;
+            }
+            .pre, .plus {
+                cursor: pointer;
+                padding: 5px 10px;
+                border: 1px solid #000;
+                margin: 0 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Giỏ hàng của bạn</h1>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be dynamically inserted here -->
+                    <!-- <tr>
+                        <td></td>
+                        <td></td>
+                        <td><span class="pre">-</span>1<span
+                                class="plus">+</span></td>
+                        <td></td>
+                        <td><button>xóa</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </section>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script>
+            var cart = [];
+            function loadCart() {
+                cart = localStorage.getItem('cart');
+                if (cart) {
+                    cart =  JSON.parse(cart);
+                } else {
+                    cart = [];
+                }
+                console.log(cart);
+            }   
+            loadCart();
+
+            function saveCart() {
+                localStorage.setItem('cart', JSON.stringify(cart));
+            }
+
+            function renderCart(item) {
+                console.log(item.product);
+                var temp = `<tr>
+                        <td>${item.product.title}</td>
+                        <td>${item.product.price}</td>
+                        <td> <span class="pre">-</span>${item.quantity}<span class="plus">+</span> </td>
+                        <td>${parseFloat( item.product.price) * parseFloat(item.quantity)}</td>
+                        <td> <button>xóa</button></td>
+                    </tr>`;
+                return temp;
+            }
+
+            function displayCart() {
+                // $('#cart-items').empty();
+                console.log(cart.length);
+                for (var i = 0; i < cart.length; i++) {
+                   $('#cart-items').append(renderCart(cart[i]));
+                }
+            }
+            displayCart();
+
+            // xử lý sự kiện tăng giảm số lượng và xóa sản phẩm
+            // xóa sản phẩm
+            // lấy id -> tìm kiếm  trong giỏ hàng -> trùng id => xóa khỏi giỏ hàng => hiển thị lại giỏ hàng
+            // lấy id (khó ) - tương tự bài toán thêm vào giỏ hàng
+
+
+            // tăng giảm số lượng
+            // lấy id -> tìm kiếm  trong giỏ hàng -> trùng id => tăng/giảm số lượng (quantity++)
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Danh sách sản phẩm</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-size: 16px;                
+            }
+            .w-100{
+                width: 100%;
+            }
+            .w-50{
+                width: 50%;
+            }
+            .w-25{
+                width: 25%;
+            }
+            #list-product{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .product-box{
+                width: 23%;
+                border: 1px solid #ccc;
+                margin-bottom: 0.5rem;
+            }
+            .product-box>div{
+                padding: 0.5rem;
+            }
+            .product-content{
+                text-align: center;
+            }
+            .product-title{
+                font-weight: normal;
+            }
+            .product-price{
+                color: green;
+                font-size: 0.75rem;
+            }
+            @media (min-width: 1200px) {
+                .product-box{
+                    width: 18%;
+                }
+                 #list-product{
+                    justify-content: space-evenly;
+                 }
+                *{
+                    font-size: 32px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section id="list-product">
+            <!-- <div class="product-box">
+                <div>
+                    <div class="product-img">
+                        <img class="w-100" src="img/anh1.jpg" alt="anh1">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sản phẩm 1</h3>
+                        <p class="product-price"1000000/p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div>
+                    <div class="product-img">
+                        <img class="w-100" src="img/anh1.jpg" alt="anh1">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sản phẩm 1</h3>
+                        <p class="product-price"1000000/p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div>
+                    <div class="product-img">
+                        <img class="w-100" src="img/anh1.jpg" alt="anh1">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sản phẩm 1</h3>
+                        <p class="product-price"1000000/p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div>
+                    <div class="product-img">
+                        <img class="w-100" src="img/anh1.jpg" alt="anh1">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sản phẩm 1</h3>
+                        <p class="product-price"1000000/p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div>
+                    <div class="product-img">
+                        <img class="w-100" src="img/anh1.jpg" alt="anh1">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sản phẩm 1</h3>
+                        <p class="product-price"1000000/p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div>
+                    <div class="product-img">
+                        <img class="w-100" src="img/anh1.jpg" alt="anh1">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sản phẩm 1</h3>
+                        <p class="product-price"1000000/p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div>
+                    <div class="product-img">
+                        <img class="w-100" src="img/anh1.jpg" alt="anh1">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sản phẩm 1</h3>
+                        <p class="product-price"1000000/p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div>
+                    <div class="product-img">
+                        <img class="w-100" src="img/anh1.jpg" alt="anh1">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sản phẩm 1</h3>
+                        <p class="product-price"1000000/p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div>
+                    <div class="product-img">
+                        <img class="w-100" src="img/anh1.jpg" alt="anh1">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sản phẩm 1</h3>
+                        <p class="product-price"1000000/p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div>
+                    <div class="product-img">
+                        <img class="w-100" src="img/anh1.jpg" alt="anh1">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sản phẩm 1</h3>
+                        <p class="product-price"1000000/p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div>
+                    <div class="product-img">
+                        <img class="w-100" src="img/anh1.jpg" alt="anh1">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sản phẩm 1</h3>
+                        <p class="product-price"1000000/p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div>
+                    <div class="product-img">
+                        <img class="w-100" src="img/anh1.jpg" alt="anh1">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sản phẩm 1</h3>
+                        <p class="product-price"1000000/p>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script>
+            //để làm dữ liệu động
+            // 1. chuẩn bị dữ liệu (mảng đối tượng)
+            var products = [
+                {
+                    id: 1,
+                    title: 'Sản phẩm 1',
+                    price: 1000000,
+                    imgUrl: 'img/anh1.jpg'
+                },
+                {
+                    id: 2,
+                    title: 'Sản phẩm 2',
+                    price: 2000000,
+                    imgUrl: 'img/anh1.jpg'
+                },
+                {
+                    id: 3,
+                    title: 'Sản phẩm 3',
+                    price: 3000000,
+                    imgUrl: 'img/anh1.jpg'
+                },
+                {
+                    id: 4,
+                    title: 'Sản phẩm 4',
+                    price: 4000000,
+                    imgUrl: 'img/anh1.jpg'
+                },
+                {
+                    id: 5,
+                    title: 'Sản phẩm 5',
+                    price: 5000000,
+                    imgUrl: 'img/anh1.jpg'
+                },
+                {
+                    id: 6,
+                    title: 'Sản phẩm 6',
+                    price: 6000000,
+                    imgUrl: 'img/anh1.jpg'
+                },
+                {
+                    id: 7,
+                    title: 'Sản phẩm 7',
+                    price: 7000000,
+                    imgUrl: 'img/anh1.jpg'
+                },
+                {
+                    id: 8,
+                    title: 'Sản phẩm 8',
+                    price: 8000000,
+                    imgUrl: 'img/anh1.jpg'
+                },
+                {
+                    id: 9,
+                    title: 'Sản phẩm 9',
+                    price: 9000000,
+                    imgUrl: 'img/anh1.jpg'
+                },
+                {
+                    id: 10,
+                    title: 'Sản phẩm 10',
+                    price: 30000000,
+                    imgUrl: 'img/anh1.jpg'
+                },
+                {
+                    id: 11,
+                    title: 'Sản phẩm 11',
+                    price: 1000000,
+                    imgUrl: 'img/anh1.jpg'
+                },
+                {
+                    id: 12,
+                    title: 'Sản phẩm 12',
+                    price: 2000000,
+                    imgUrl: 'img/anh1.jpg'
+                }
+            ];
+            // 2. Tạo hàm render sản phẩm
+            function renderProduct(product) {
+                var temp = `<div class="product-box">
+                                <div>
+                                    <div class="product-img">
+                                        <img class="w-100" src="${product.imgUrl}" alt="anh1">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-title">${product.title}</h3>
+                                        <p class="product-price">${product.price}</p>
+                                        <button class="add-to-cart" data-id="${product.id}">Thêm vào giỏ hàng</button>
+                                    </div>
+                                </div>
+                            </div>`;
+                return temp;
+            }
+
+            // 3. Lặp qua mảng dữ liệu và gọi hàm render
+            function renderProductList(listpoduct) {
+                for(var i=0; i<listpoduct.length; i++) {
+                    var productHTML = renderProduct(listpoduct[i]);
+                    $('#list-product').append(productHTML);
+                }
+            }
+            // 4. Gọi hàm render danh sách sản phẩm
+            renderProductList(products);
+               
+
+             function renderProductList() {
+                for(var i=0; i<products.length; i++) {
+                    var productHTML = `<div class="product-box">
+                                <div>
+                                    <div class="product-img">
+                                        <img class="w-100" src="${products[i].imgUrl}" alt="anh1">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-title">${products[i].title}</h3>
+                                        <p class="product-price">${products[i].price}</p>
+                                        <button class="add-to-cart" data-id="${products[i].id}">Thêm vào giỏ hàng</button>
+                                    </div>
+                                </div>
+                            </div>`;
+                    $('#list-product').html(productHTML);                   
+                }
+            }
+
+            //Thêm sản phẩm vào giỏ hàng
+            var cart = [];
+            function loadCart() {
+                cart = localStorage.getItem('cart');
+                if (cart) {
+                    cart =  JSON.parse(cart);
+                } else {
+                    cart = [];
+                }
+                console.log(cart);
+            }
+
+            function saveCart() {
+                localStorage.setItem('cart', JSON.stringify(cart));
+            }
+
+            loadCart();
+
+            // Thêm sự kiện click vào từng nút "Thêm vào giỏ hàng"
+            $('.add-to-cart').on('click', function() {
+                var productId = $(this).data('id');
+                console.log('Thêm sản phẩm có id = ' + productId + ' vào giỏ hàng');
+                let pro = products.find(p => p.id === productId);
+                
+                let  cartItem = cart.find(item => item.product.id === productId);
+                if (cartItem) {
+                    cartItem.quantity += 1;
+                } else {
+                    cart.push({ product: pro, quantity: 1 });
+                }
+                console.log(cart);
+                saveCart();
+            });
+
+
+
+        </script>
+    </body>
+</html>
