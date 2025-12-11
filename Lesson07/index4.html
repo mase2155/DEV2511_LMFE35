@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -87,6 +88,36 @@
             displayCart();
 
             // xử lý sự kiện tăng giảm số lượng và xóa sản phẩm
+            var idCart [];
+            var productId;
+            function updateCart(action,idCart[]){
+                idCart =localStorage.getItem('idCart');
+                if (idCart) {
+                    idCart = JSON.parse('idCart')
+                }else {
+                    idCart = [];
+                }
+                for ( let i = 0 ; i<(idCart.length - 1 ); i++){
+                    if (idCart === productId) {
+                        return i;
+                    }else{
+                        return - 1 ;
+                    }
+                }
+                switch ( action) {
+                    case increaseValue :
+                        idCart[i].id += 1;
+                        break;
+                    case decreaseValue :
+                        if (idCart[i].id <=0){
+                            console.log(message('Hien khong co san pham nao trong gio hang'));
+                        idCart[i].id -= -1;
+                        break;
+                        }
+                }
+                saveCart();
+                renderCart();
+            }
             // xóa sản phẩm
             // lấy id -> tìm kiếm  trong giỏ hàng -> trùng id => xóa khỏi giỏ hàng => hiển thị lại giỏ hàng
             // lấy id (khó ) - tương tự bài toán thêm vào giỏ hàng
