@@ -1,6 +1,6 @@
 #banner {
     margin-top: 60px;
-    background-image: url('../img/banner.jpg');
+    background-image: url('../img/product/banner.jpg');
     height: 900px;
 }
 
@@ -30,3 +30,18 @@
     color: #fff;
     border: 0;
 }
+w-60{
+    width: 60%;
+}
+
+#info-company{
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            background-color: #333333;
+        }
+.details{
+    font-family: 'Gotham-Thin';
+    font-size: 30px;
+}
+        

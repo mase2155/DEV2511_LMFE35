@@ -1,0 +1,32 @@
+1. HTML
+ - thẻ HTML :
+            + cặp thẻ : <tên_thẻ> nội dung  </tên_thẻ>
+            + thẻ đơn : <tên_thẻ/>
+ - tính chất của thẻ HTML : 2 tính chất mặc định : block và inline 
+ - Phân biệt theo chức năng của thẻ : 
+    + table (tr/td/th/thead /tbody/tfoot)
+    + form ( input ....)
+    + header  , section , footer , nav , div , ....
+    + inline : span , b , a , ....
+    + ul , li , ol , li ....
+ - Thuộc tính của thẻ ( attr ) : id , class , type , name , 
+
+
+2. CSS
+
+
+3. JavaScript
+
+
+4.DOM / Jquery
+
+
+5. Boostrap
+
+
+6.Photoshop
+
+
+
+7. Rangular Exception
+
