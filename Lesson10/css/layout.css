@@ -6,6 +6,10 @@
     font-size: 16px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .cl-1 {
     color: #2c2e53 !important;
 }
@@ -20,6 +24,14 @@
 
 .bg-2 {
     color: #bd945f !important;
+}
+
+.fm-ultra {
+    font-family: 'Gotham-Ultra';
+}
+
+.fm-thin {
+    font-family: 'Gotham-Thin';
 }
 
 header {

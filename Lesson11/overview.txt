@@ -10,23 +10,71 @@
     + inline : span , b , a , ....
     + ul , li , ol , li ....
  - Thuộc tính của thẻ ( attr ) : id , class , type , name , 
-
-
 2. CSS
+    -Các cách sử dụng CSS
+        +
+        +
+        + 
+    -Cách tương tác với thẻ HTML
+        +
+        +
+        +
+    - Các bộ chọn trong CSS :
+        + tag01 tag 02
+        + tag01>tag02
+        + tag01 ~ tag02
+        + tag01 + tag02
+        + tag01 , tag02
+        + hover , after , before 
+    - Quy tắc ghi đè CSS ( mức độ ưu tiên ) 
+        +  CSS viết sau sẽ được ưu tiên
+        +  !important -> id -> class -> tên_attr -> tên_thẻ
+        +  bộ chọn càng gần / chi tiết đến thẻ càng được ưu tiên
+    - Thuộc tính CSS và giá trị thuộc tính
 
+    - Responsive :    
 
 3. JavaScript
+    - ngôn ngữ lập trình kịch bản 
+    - biến 
+    - cấu trúc điều khiển 
+    - vòng lặp 
+    - mảng 
+    - hàm 
+    - object 
+    - date 
+    - Xử lí chuỗi 
 
 
 4.DOM / Jquery
-
-
+    - Sự kiện : 
+        + viết trên thẻ html : onclick , onblur , ondbclick , ....
+        + viết trên file /file script : 
+                        ++ DOM : addListenerEvent('sự_kiện' , hàm_xử_lý()){}
+                        ++ Jquery : on('sự_kiện', hàm_xử_lý()){}
+    - Thay đổi class :
+                + DOM : thẻ_nào.display.tên_thuộc_tính_CSS = giá_trị_thuộc_tính_CSS
+                + Jquery : thẻ_nào.css(tên_thuộc_tính_CSS , giá_trị_thuộc_tính_CSS)
+    - Thay đổi HTML :
+                + DOM : thẻ_nào.innerHTML = giá_trị_HTML_thêm
+                + Jquery : thẻ_nào.append(giá_trị_thêm)
+    - thay đổi vị trí tương tác với thẻ HTML 
+                + DOM : child , parent , siblings
+                + Jquery : child() , parent() , siblings() , next() , ...
+    - tương tác với các attr khác của thẻ HTML
 5. Boostrap
-
-
+    - Cách sử dụng Boostrap : thư viện CSS kết hợp một phần Jquery
+        + download và import
+        + sử dụng thư viện online 
+    - Cách làm việc với Boostrap
+        + copy theo mẫu
+        + sử dụng class có sẵn cả Boostrap
+    => Sử dụng kiến thức HTML/CSS để ghi đè sao cho phù hợp với trang thiết kế 
 6.Photoshop
-
-
-
+    - Cắt ảnh 
+    - Đo kích thước
+    - Lấy Fonts / Kích thước
+    - Màu sắc
 7. Rangular Exception
+8. Thư viện Slick
 
